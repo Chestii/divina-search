@@ -1,0 +1,22 @@
+[package]
+name = "divina-search"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.88"
+
+[[bin]]
+name = "divina-search"
+path = "src/main.rs"
+
+[dependencies]
+iced = "0.14"
+global-hotkey = "0.8"
+walkdir = "2"
+open = "5"
+dirs = "5"
+urlencoding = "2"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
